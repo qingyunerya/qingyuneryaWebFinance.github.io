@@ -525,6 +525,5 @@ canvas1.onmousemove = function (e) {
 document.onkeydown = function (event) {
     if (event.keyCode == 8 && obj.gamerun == 1) {
         obj.gua();
-        
     };
 }
