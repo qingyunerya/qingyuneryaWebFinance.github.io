@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>弹性盒子实例总结</title> 
+<style> 
+	.flex-container1{
+		display:flex;
+		width:400px;
+		height:250px;
+		background-color:lightGray;
+		-webkit-flex-direction:row-reverse;
+		flex-direction:column-reverse;
+		margin-bottom:10px;
+	}
+	.flex-item1{
+		width:100px;
+		height:100px;
+		margin:10px;
+		background-color:cornflowerblue;
+	}
+	.flex-container2{
+		display:flex;
+		width:400px;
+		height:250px;
+		background-color:lightGray;
+		justify-content:space-between;
+		margin-bottom:10px;
+	}
+	.flex-item2{
+		width:40px;
+		height:40px;
+		margin:10px;
+		background-color:cornflowerblue;
+	}
+	.flex-container3{
+		display:flex;
+		width:400px;
+		height:250px;
+		background-color:lightGray;
+		justify-content:space-around;
+		align-items:flex-start;
+		margin-bottom:10px;
+	}
+	.flex-item3{
+		width:100px;
+		height:100px;
+		margin:10px;
+		background-color:cornflowerblue;
+	}
+	.flex-container4{
+		display:flex;
+		width:400px;
+		height:250px;
+		background-color:lightGray;
+		flex-wrap:wrap-reverse;
+		margin-bottom:10px;
+	}
+	.flex-container5{
+		display:flex;
+		width:400px;
+		height:300px;
+		background-color:lightGray;
+		flex-wrap:wrap;
+		align-content:stretch;
+		margin-bottom:10px;
+	}
+	.first{
+		order:-1;
+		margin-right:auto;
+	}
+	.flex-item6{
+		width:100px;
+		height:100px;
+		margin:10px;
+		background-color:cornflowerblue;
+		margin:auto;
+	}
+	.flex-container7{
+		display:flex;
+		width:400px;
+		height:300px;
+		background-color:lightGray;
+		flex-wrap:wrap;
+		align-content:stretch;
+		margin-bottom:10px;
+	}
+	.flex-item11{
+		width:100px;
+		height:100px;
+		margin:10px;
+		background-color:cornflowerblue;
+		align-self:flex-start;
+	}
+	.flex-item22{
+		width:100px;
+		height:100px;
+		margin:10px;
+		background-color:cornflowerblue;
+		align-self:flex-end;
+	}
+	.flex-container8{
+		display:flex;
+		width:400px;
+		height:300px;
+		background-color:lightGray;
+		flex-wrap:wrap;
+		align-content:stretch;
+		margin-bottom:10px;
+	}
+	.flex-item28{
+		width:100px;
+		height:100px;
+		margin:10px;
+		background-color:cornflowerblue;
+		flex:1;
+	}
+	.flex-item18{
+		width:100px;
+		height:100px;
+		margin:10px;
+		background-color:cornflowerblue;
+		flex:2;
+	}
+	/*
+	1.注意： 弹性容器外及弹性子元素内是正常渲染的。弹性盒子只定义了弹性子元素如何在弹性容器内布局。
+弹性子元素通常在弹性盒子内一行显示。默认情况每个容器只有一行。
+	2.如果我们设置 direction 属性为 rtl (right-to-left),弹性子元素的排列方式也会改变，页面布局也跟着改变
+	3.注意，设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
+	
+	*/
+</style>
+</head>
+<body>
+	<div class="flex-container1">
+		<div class="flex-item1">item1</div>
+		<div class="flex-item1">item2</div>
+		<div class="flex-item1">item3</div>
+	</div>
+	<div class="flex-container2">
+		<div class="flex-item2">item1</div>
+		<div class="flex-item2">item2</div>
+		<div class="flex-item2">item3</div>
+	</div>
+	<div class="flex-container3">
+		<div class="flex-item3">item1</div>
+		<div class="flex-item3">item2</div>
+		<div class="flex-item3">item3</div>
+	</div>
+	<div class="flex-container4">
+		<div class="flex-item3">item1</div>
+		<div class="flex-item3">item2</div>
+		<div class="flex-item3">item3</div>
+		<div class="flex-item3">item4</div>
+		<div class="flex-item3">item5</div>
+		<div class="flex-item3">item6</div>
+	</div>
+	<div class="flex-container5">
+		<div class="flex-item3">item1</div>
+		<div class="flex-item3">item2</div>
+		<div class="flex-item3">item3</div>
+		<div class="flex-item3">item4</div>
+		<div class="flex-item3">item5</div>
+		<div class="flex-item3 first">item6</div>
+	</div>
+	<div class="flex-container5">
+		<div class="flex-item6">item1</div>
+	</div>
+	<div class="flex-container7">
+		<div class="flex-item11">item11</div>
+		<div class="flex-item22">item22</div>
+	</div>
+	<div class="flex-container8">
+		<div class="flex-item18">item11</div>
+		<div class="flex-item28">item22</div>
+	</div>
+</body>
+</html>

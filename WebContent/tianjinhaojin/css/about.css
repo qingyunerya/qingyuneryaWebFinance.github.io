@@ -1,0 +1,21 @@
+ul,li{margin:0; padding:0; list-style:none;}
+
+h2{padding:0; font-size:28px; margin:0 auto 20px; text-align:center; overflow: hidden; }
+h2 i{width:50px; height:2px; background-color:#ff5800; display: inline-block; margin:10px;}
+
+.about{padding: 20px 0 20px;min-height: 300px;}
+.about .textPic{font-size:16px; color:#333; overflow: hidden; margin-top: 10px;}
+.about .textPic img{width:100%;}
+.about ul {overflow: hidden;}
+.about ul li { margin-top:20px; padding:0 10px; cursor: pointer; }
+.about ul li .pic{width:100%;position:relative;}
+.about ul li .pic img{width:100%;}
+.about ul li .pic div{transform:scale(0,0);transition: 400ms; position:absolute; top:0; left:0; text-align: center; width: 100%; padding:45px 0 75px; background-color:rgba(26,28,27,.8); color:#fff;}
+.about ul li .pic div b{font-size:20px;}
+.about ul li .pic div p{font-size:16px; margin-top:10px;}
+.about ul li .pic:hover div{transform:scale(1,1);}
+
+@media (max-width: 768px){
+	.about .textPic img{margin-bottom:10px;}
+	.about ul li .pic div{padding:20px 0}
+}

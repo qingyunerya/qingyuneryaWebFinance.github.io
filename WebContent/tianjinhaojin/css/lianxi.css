@@ -1,0 +1,29 @@
+
+ul,li{margin:0; padding:0; list-style:none;}
+
+h2{padding:0; font-size:28px; margin:0 auto 20px; text-align:center; overflow: hidden; }
+h2 i{width:50px; height:2px; background-color:#ff5800; display: inline-block; margin:10px;}
+
+.lianxi{padding:30px 0; font-size:18px; background:url(../images/lx_bg.png) no-repeat;}
+.lx1 {margin-top:40px;}
+.lx1 ul li{border-bottom:1px solid #eeedeb;  padding:15px 0; transition:200ms; cursor:pointer;}
+.lx1 ul li img{margin-right:10px; margin-bottom:6px; }
+.lx1 p{text-align: center; line-height:40px; cursor: pointer;}
+.lx1 p img{width:160px;}
+.lx1 ul li:hover{color:#ff6600;}
+
+@media (max-width: 768px){
+	.lianxi{font-size:16px;}
+
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	border-top:0 none; border-bottom:1px solid #ddd;
+}
+
+.link_link { padding-bottom:20px; line-height:30px; }
+.link_link > a{ color:#333; text-decoration:none; }
+.link_link > a:hover{ color:#ff6600; }
+
+
+

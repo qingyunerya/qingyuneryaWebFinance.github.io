@@ -1,0 +1,40 @@
+ul,li{margin:0; padding:0; list-style:none;}
+
+h2{padding:0; font-size:28px; margin:0 auto 20px; text-align:center; overflow: hidden; }
+h2 i{width:50px; height:2px; background-color:#ff5800; display: inline-block; margin:10px;}
+
+.xingmu{ padding:30px 0 35px; font-size:16px; }
+.xingmu > p{border-bottom:1px solid #eeedeb; padding-bottom:13px;color:#ff5800; margin-bottom:30px;}
+.xingmu > p a{color:#ff5800;}
+.xingmu .xmLeft{ font-size:18px; padding-left:0; }
+.xingmu .xmLeft ul{border:1px solid #eeedeb;}
+.xingmu .xmLeft ul li.xmL1{font-size:26px; color:#fff; background-color:#ff5800; padding:15px 0; border:0 none;}
+.xingmu .xmLeft ul li{padding:0px 15px; line-height:22px; overflow: hidden;}
+.xingmu .xmLeft ul li a{border-bottom:1px solid #ededed; padding:15px 0 15px 50px; color:#555; display: block; overflow: hidden;}
+.xingmu .xmLeft ul li a:hover{color:#ff5800; text-decoration:none;}
+.xingmu .xmLeft ul li a span{float: right; color:#555;}
+.xingmu .xmLeft ul li a:hover span{color:#555; transform:rotate(90deg);}
+
+.xingmu .xmRight > p{border-bottom:1px solid #eeedeb; padding:20px 0; font-size:18px; color:#ff5800;}
+.xingmu .xmRight > ul{padding-top:5px;}
+.xingmu .xmRight > ul li{list-style:square inside; padding:10px 0; border-bottom:1px dotted #eeedeb;overflow: hidden;}
+.xingmu .xmRight > ul li a{color:#555; transition:200ms;}
+.xingmu .xmRight > ul li:hover a{color:#ff5800; text-decoration:none;}
+.xingmu .xmRight > ul li span{float:right; font-size:14px; color:#888;}
+
+.xingmu .xmRight .fenye{text-align: center;margin: 20px auto;}
+.xingmu .xmRight .fenye a{color:#555; margin:0 5px;}
+.xingmu .xmRight .fenye a.active{background-color:#ff5800; color:#fff;}
+.xingmu .xmRight .fenye a:hover,.xingmu .xmRight .fenye a:focus{background-color:#ff5800; color:#fff;}
+
+@media (max-width: 768px){
+	.xingmu .xmRight .fenye a{padding:5px 8px;margin:3px 3px;}
+}
+
+.xw_news{padding-top:5px;}
+.xw_news li{list-style:square inside; padding:10px 0; border-bottom:1px dotted #eeedeb;overflow: hidden;}
+.xw_news li a{color:#555; transition:200ms;}
+.xw_news li:hover a{color:#ff5800; text-decoration:none;}
+.xw_news li span{float:right; font-size:14px; color:#888;}
+
+.xingmu .xmRight > ul li a:focus,.xw_news li a:focus{ text-decoration:none; }
